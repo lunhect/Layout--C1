@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layout.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Label
+                Text="Layouts"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="Vertical"
+                Text="Vertical" 
+                SemanticProperties.Hint="Orientacion vertical"
+                Clicked="Vertical_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Horizontal"
+                Text="Horizontal"
+                SemanticProperties.Hint="Orientacion vertical"
+                Clicked="Horizontal_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Grid"
+                Text="Grid"
+                SemanticProperties.Hint="Orientacion vertical"
+                Clicked="Grid_Clicked"
+                HorizontalOptions="Fill"  />
+
+
+            <Button
+                x:Name="Flex"
+                 Text="Flex"
+                SemanticProperties.Hint="Orientacion vertical"
+                Clicked="Flex_Clicked"
+                HorizontalOptions="Fill"
+           />
+
+
+            <Button
+                x:Name="Absolute"               
+                 Text="Absoulte cinema"
+                SemanticProperties.Hint="Orientacion vertical"
+                Clicked="Absolute_Clicked"
+                HorizontalOptions="Fill"
+          />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
+using System;
+using Microsoft.Maui.Controls;
+
+namespace Layout
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        void Vertical_Clicked(object sender, EventArgs e)
+        {
+            // manejo del evento
+        }
+
+        void Horizontal_Clicked(object sender, EventArgs e)
+        {
+            // manejo del evento
+        }
+    }
+}
