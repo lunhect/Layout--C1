@@ -47,11 +47,13 @@
 
             <Button
                 x:Name="Absolute"               
-                 Text="Absoulte cinema"
+                 Text="Absoulte"
                 SemanticProperties.Hint="Orientacion vertical"
                 Clicked="Absolute_Clicked"
                 HorizontalOptions="Fill"
           />
+            
+            
 
 
 
@@ -60,26 +62,3 @@
 
 </ContentPage>
 
-using System;
-using Microsoft.Maui.Controls;
-
-namespace Layout
-{
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        void Vertical_Clicked(object sender, EventArgs e)
-        {
-            // manejo del evento
-        }
-
-        void Horizontal_Clicked(object sender, EventArgs e)
-        {
-            // manejo del evento
-        }
-    }
-}
